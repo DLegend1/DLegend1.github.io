@@ -4,7 +4,7 @@ html,.container-fluid {
 
 
 .portfolio-left{
-    background-color: #ED47FF	;
+    background-color: tomato	;
     font-family: 'Source Code Pro', monospace;
     color:white;
     font-size: 1rem;
@@ -30,7 +30,7 @@ html,.container-fluid {
 .fa.contact-icon{
     border-radius: 50%;
     background-color: white;
-    color: #ED47FF;
+    color: tomato;
     width: 2rem;
     height: 2rem;
     text-align: center;
@@ -49,17 +49,17 @@ html,.container-fluid {
 }
 
 .title-row h2{
-    color:#ED47FF;
+    color:tomato;
     font-size: 1.8rem;
 }
 
 .title-row h1{
-    color: #ED47FF;
+    color: tomato;
     font-size: 2.2rem;
 }
 
 .highlight{
-    color: #ED47FF;
+    color: tomato;
 }
 
 .portfolio-right ul{
@@ -79,7 +79,7 @@ left: -15px;
 width: 8px;
 height: 8px;
 border-radius: 50%;
-border: 2px solid #ED47FF;
+border: 2px solid tomato;
 }
 .portfolio-right ul li::after{
 content: "";
@@ -88,5 +88,5 @@ content: "";
     left: -12px;
     width: 2px;
     height: 18px;
-    background: #ED47FF;
+    background: tomato;
 }

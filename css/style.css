@@ -1,0 +1,63 @@
+html,.container-fluid {
+    background-color: rgba(42 41 237 / 68%);
+}
+
+
+.portfolio-left{
+    background-color:#FF6347	;
+    font-family: 'Source Code Pro', monospace;
+    color:white;
+    font-size: 1rem;
+}
+
+.portf-pic{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    height: 20vw;
+    background-image: url("../img/portfolio.jpg");
+}
+
+.name-row h1{
+    font-size: 1.8rem;
+}
+
+.name-row h4{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.fa.contact-icon{
+    border-radius: 50%;
+    background-color: white;
+    color: tomato;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+
+}
+
+
+.info-row,.info-row span{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.portfolio-right{
+    background-color: white;
+}
+
+.title-row h2{
+    color:tomato;
+    font-size: 1.8rem;
+}
+
+.title-row h1{
+    color: tomato;
+    font-size: 2.2rem;
+}
+
+.highlight{
+    color: tomato;
+}

@@ -2,6 +2,15 @@ html,.container-fluid {
     background-color: #4D5FB3;
 }
 
+/*  Portfolio Left  */
+.a-nolink{
+    color:  unset;
+    transition-duration: 0.4s;
+}
+
+.a-nolink:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
 
 .portfolio-left{
     background-color: tomato	;
@@ -13,9 +22,9 @@ html,.container-fluid {
 .portf-pic{
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 105%;
+    background-size: 102%;
     height: 20vw;
-    background-image: url("../img/portfolio.jpg");
+    background-image: url("../img/portfolio-copy.jpg");
 }
 
 .name-row h1{
@@ -24,6 +33,12 @@ html,.container-fluid {
 
 .name-row h4{
     color: rgba(0, 0, 0, 0.5);
+}
+
+.name-row hr{
+    background-color: white;
+    width: 90%;
+    margin: auto;
 }
 
 
@@ -38,14 +53,21 @@ html,.container-fluid {
 
 }
 
+.font-bold-underline{
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 .info-row,.info-row span{
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
+/*  Portfolio Right    */
+
 .portfolio-right{
     background-color: white;
+    padding-top: 15px;
 }
 
 .title-row h2{
@@ -56,6 +78,10 @@ html,.container-fluid {
 .title-row h1{
     color: tomato;
     font-size: 2.2rem;
+}
+
+.title-row p{
+    text-align: justify;
 }
 
 .highlight{
@@ -69,6 +95,7 @@ html,.container-fluid {
 
 .portfolio-right ul li{
     position: relative;
+    padding-right: 10px;
 }
 
 .portfolio-right ul li::before{
@@ -89,4 +116,10 @@ content: "";
     width: 2px;
     height: 18px;
     background: tomato;
+}
+
+hr{
+    margin-top: 15px;
+    background-color: tomato;
+    opacity: 1;
 }

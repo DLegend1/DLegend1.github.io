@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <style>
+        #img-container {
+            position: relative;
+            overflow: hidden;
+            height: 256px;
+            width: 256px;
+        }
+
+        #img-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+    </style>
+    <link rel="stylesheet" href="./style/character.css">
+</head>
+
+<body>
+    <div class="navbar navbar-dark bg-dark">
+        <div class="container-fluid col">
+            <div class="row">
+                <a href="./index.html" class="navbar-text col-3">
+                    Button
+                </a>
+                <span class="navbar-text col">
+                    Go back to previous page
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div style="text-align: center;" class="row">
+            <h1 class="site-title col-4 offset-2">Character Creator</h1>
+        </div>
+        <div style="text-align: center;" class="row">
+            <h2 id="site-undertitle" class="col-4 offset-3">Build your own character</h2>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 offset-1">
+                <div id="img-container" class="hair-red eye-purple false noAnimations">
+                    <img class="layer-backhair colour-hair" src="img/character/hair/sides/default/shoulder.png">
+                    <img class="layer-base" src="img/character/bodyRed/basenoarms.png"
+                        style="filter: hue-rotate(30deg) saturate(0.15) brightness(4.30)"> <img class="layer-basehead"
+                        src="img/character/bodyRed/basehead.png"
+                        style="filter: hue-rotate(30deg) saturate(0.15) brightness(4.30)"> <img class="layer-breasts"
+                        src="img/character/bodyRed/breasts/breasts1.png"
+                        style="filter: hue-rotate(30deg) saturate(0.15) brightness(4.30)"> <img class="layer-base"
+                        src="img/character/bodyRed/leftarmidle.png"
+                        style="filter: hue-rotate(30deg) saturate(0.15) brightness(4.30)"> <img class="layer-base"
+                        src="img/character/bodyRed/rightarmidle.png"
+                        style="filter: hue-rotate(30deg) saturate(0.15) brightness(4.30)">
+                    <img class="layer-fronthair colour-hair" src="img/character/hair/fringe/default/short.png"> <img
+                        class="layer-facebase " src="img/character/face/default/red/base.png"
+                        style="filter: hue-rotate(30deg) saturate(0.15) brightness(4.30)"> <img class="layer-eyes"
+                        src="img/character/face/default/red/eyes.png"
+                        style="filter: hue-rotate(30deg) saturate(0.15) brightness(4.30)"> <img class="layer-sclera"
+                        src="img/character/face/default/sclera.png"> <img id="layer-eyes" class="layer-iris colour-eye "
+                        src="img/character/face/default/iris.png"> <img class="layer-eyelids "
+                        src="img/character/face/default/red/eyelids.png"
+                        style="filter: hue-rotate(30deg) saturate(0.15) brightness(4.30)"> <img class="layer-lashes "
+                        src="img/character/face/default/lashes.png">
+                    <div class="layer-brow hair-red"> <img class="colour-hair" src="img/character/face/default/browtop.png">
+                    </div> <img class="layer-mouth" src="img/character/face/default/red/mouthneutral.png"
+                        style="filter: hue-rotate(30deg) saturate(0.15) brightness(4.30)">
+                    <div class="clothes-div layer-legs"> <img class="anim-idle-1f"
+                            src="img/character/clothes/legs/girlsgymsocks/full.png"> </div>
+                    <div class="clothes-div layer-under_lower"> <img class="anim-idle-1f clothes-pale-white"
+                            src="img/character/clothes/under_lower/plainpanties/full.png"> </div>
+
+                    <div id="layer-upper" class="clothes-div layer-upper"> <img class="anim-idle-1f clothes-white"
+                            src="img/character/clothes/upper/sundress/full.png"> <img class="anim-idle-1f clothes-white"
+                            src="img/character/clothes/upper/sundress/0.png"> </div>
+
+                    <div id="layer-lower" class="clothes-div layer-lower"> <img class="anim-idle-1f clothes-white"
+                            src="img/character/clothes/lower/sundress/full.png"> <img class="anim-idle-1f clothes-white"
+                            src="img/character/clothes/upper/sundress/1.png"> </div>
+
+                    <div class="clothes-div layer-feet"> <img class="anim-idle-2f"
+                            src="img/character/clothes/feet/schoolshoes/full.png" style=""> </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <h4>Hair Color Picker</h4>
+                <div class="slidecontainer">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="hair-hue">
+                </div>
+                <h4>Eye Color Picker</h4>
+                <div class="slidecontainer">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="eye-hue">
+                </div>
+                <h4>Upper Color Picker</h4>
+                <div class="slidecontainer">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="upper-hue">
+                </div>
+                <h4>Lower Color Picker</h4>
+                <div class="slidecontainer">
+                    <input type="range" min="-180" max="180" value="0" class="slider" id="lower-hue">
+                </div>
+            </div>
+            <script src="./js/character.js">
+
+            </script>
+
+        </div>
+    </div>
+</body>
+
+</html>

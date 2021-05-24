@@ -1,0 +1,30 @@
+
+html{
+    background-color: gainsboro;
+}
+html div{
+    background-color: gainsboro;
+}
+
+div .site-circleholder{
+    position: relative;
+    top: 25vmin;
+}
+
+div .site-circlelink{
+    position: relative;
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+div .site-circlelink:hover{
+    box-shadow: chocolate;
+}
+
+div h1.site-circletext{
+    padding-top: 40%;
+}

@@ -11,26 +11,67 @@
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/973e38d162.js"></script>
 </head>
 
 <body>
+
+    <!--Side Navigation pannel which is hidden until opened-->
     <div id="mySidenav" class="sidenav">
-        <span onclick="teachercounter()"> TEACHERHello World</span>
-        <span onclick="friendcounter()"> Friend</span>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <div onclick="nBuy(0)">
+            <span>Neighbour</span>
+            <div class="counter-info-text">
+                <span>CPS: 1</span>
+                <span>Cost: 20 Code</span>
+                <span id="NeighbourBought">Bought: 0</span>
+            </div>
+        </div>
+        <div onclick="nBuy(1)">
+            <span>Friend</span>
+            <div class="counter-info-text">
+                <span>CPS: 5</span>
+                <span>Cost: 100 Code</span>
+                <span id="FriendBought">Bought: 0</span>
+            </div>
+        </div>
+        <div onclick="nBuy(2)">
+            <span>Dacko</span>
+            <div class="counter-info-text">
+                <span>CPS: 15</span>
+                <span>Cost: 200 Code</span>
+                <span id="DackoBought">Bought: 0</span>
+            </div>
+        </div>
+        <div onclick="nBuy(3)">
+            <span>Ustijana</span>
+            <div class="counter-info-text">
+                <span>CPS: 45</span>
+                <span>Cost: 1000 Code</span>
+                <span id="UstijanaBought">Bought: 0</span>
+            </div>
+        </div>
+        <div onclick="nBuy(4)">
+            <span>Tuntev</span>
+            <div class="counter-info-text">
+                <span>CPS: 150</span>
+                <span>Cost: 10000 Code</span>
+                <span id="TuntevBought">Bought: 0</span>
+            </div>
+        </div>
     </div>
 
-    <!-- Use any element to open the sidenav -->
-    <span class="" id="openNav" onclick="openNav()">open</span>
+    <!-- Use any element to open the sidenav and open the panel-->
+    <span class="" id="openNav" onclick="openNav()"><i class="fas fa-play"></i></span>
 
     <div class="container-fluid">
         <div class="row head" style="height: 20vh;">
             <div>
-                <h1>Coding Clicker !</h1>
+                <h1 style="margin-top: 2%;margin-left: 4%;margin-bottom: 0%;">Coding Clicker !</h1>
             </div>
             <div>
-                <span><b>Code written: </b><h3 style="display:inline" id="counter">0</h3></span>
+                <span style="margin-left: 10%;"><b>Code written: </b><h3 style="display:inline" id="counter">0</h3></span>
             </div>
 
         </div>

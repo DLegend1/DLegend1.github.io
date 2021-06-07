@@ -1,9 +1,9 @@
 
 html{
-    background-color: gainsboro;
+    background-color: rgb(150,150,255);
 }
 html div{
-    background-color: gainsboro;
+    background-color: rgb(150,150,255);
 }
 
 div .site-circleholder{
@@ -16,15 +16,17 @@ div .site-circlelink{
     cursor: pointer;
     background-color: blue;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     text-align: center;
 }
 
-div .site-circlelink:hover{
-    box-shadow: chocolate;
+div h1.site-circletext{
+    padding-top: 35%;
+    color: white;
+    
 }
 
-div h1.site-circletext{
-    padding-top: 40%;
+div a.site-circlelink:hover{
+    background-color: chocolate;
 }

@@ -1,4 +1,5 @@
 let counter = document.getElementById("counter");
+let cps = document.getElementById("CPS");
 document.getElementById("particles-js").onclick = code;
 let wCode = 0;
 let i = 0;
@@ -70,6 +71,7 @@ function nBuy(id) {
             if (wCode >= 20) {
                 nNeighbor++;
                 NeighbourBought.innerText = `Bought: ${nNeighbor}` 
+                cps.innerText= (nNeighbor*1) + (nFriend*5) + (nDacko*15) + (nUstijana*45) + (nTuntev*150);
                 wCode -= 20;
 
             } else{
@@ -82,6 +84,7 @@ function nBuy(id) {
             if (wCode >= 100) {
                 nFriend++;
                 FriendBought.innerText = `Bought: ${nFriend}` 
+                cps.innerText= (nNeighbor*1) + (nFriend*5) + (nDacko*15) + (nUstijana*45) + (nTuntev*150);
                 wCode -= 100;
 
             } else{
@@ -94,6 +97,7 @@ function nBuy(id) {
             if (wCode >= 200) {
                 nDacko++;
                 DackoBought.innerText = `Bought: ${nDacko}` 
+                cps.innerText= (nNeighbor*1) + (nFriend*5) + (nDacko*15) + (nUstijana*45) + (nTuntev*150);
                 wCode -= 200;
 
             } else{
@@ -105,6 +109,7 @@ function nBuy(id) {
             if (wCode >= 1000) {
                 nUstijana++;
                 UstijanaBought.innerText = `Bought: ${nUstijana}` 
+                cps.innerText= (nNeighbor*1) + (nFriend*5) + (nDacko*15) + (nUstijana*45) + (nTuntev*150);
                 wCode -= 1000;
 
             } else{
@@ -116,6 +121,7 @@ function nBuy(id) {
             if (wCode >= 10000) {
                 nTuntev++;
                 TuntevBought.innerText = `Bought: ${nTuntev}` 
+                cps.innerText= (nNeighbor*1) + (nFriend*5) + (nDacko*15) + (nUstijana*45) + (nTuntev*150);
                 wCode -= 10000;
 
             } else{
@@ -138,4 +144,9 @@ function nSetInterval() {
 
 function nClearInterval() {
     clearInterval(intervalID);
+}
+
+function cheater(n) {
+    wCode+=n;
+    counter.innerText = wCode;
 }
